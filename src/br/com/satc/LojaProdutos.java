@@ -4,6 +4,10 @@
  * and open the template in the editor.
  */
 package br.com.satc;
+import br.com.satc.enums.LojaSapato;
+import br.com.satc.objeto.Produtos;
+import java.util.ArrayList;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -16,6 +20,12 @@ public class LojaProdutos {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+ JOptionPane.showInputDialog("Mostre a lista de sapatos");
+   ArrayList<Produtos> produtos = new ArrayList<>();
+   for(LojaSapato produto : LojaSapato.values()){
+   produtos.add(new Produtos(produto.getNome(), produto.getDescricao(), produto.getStatus(), produto.getValor(), produto.getId()));
+   
+ }
     }
 }
        

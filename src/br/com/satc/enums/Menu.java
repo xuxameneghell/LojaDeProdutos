@@ -5,6 +5,8 @@
  */
 package br.com.satc.enums;
 
+import br.com.satc.objeto.Produtos;
+
 /**
  *
  * @author luana.159917
@@ -54,5 +56,9 @@ public enum Menu {
     @Override
     public String toString() {
         return "Menu{" + "opcaoEscolha=" + opcaoEscolha + '}';
+    }
+
+    public void add(Produtos produtos) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }

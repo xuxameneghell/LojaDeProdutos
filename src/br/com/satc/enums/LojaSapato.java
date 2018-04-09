@@ -5,6 +5,8 @@
  */
 package br.com.satc.enums;
 
+import br.com.satc.objeto.Produtos;
+
 /**
  *
  * @author luana.159917
@@ -58,6 +60,10 @@ public enum LojaSapato {
     @Override
     public String toString() {
         return "LojaSapato{" + "nome=" + nome + ", descricao=" + descricao + ", status=" + status + ", valor=" + valor + ", id=" + id + '}';
+    }
+
+    public void add(Produtos produtos) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     }
    
