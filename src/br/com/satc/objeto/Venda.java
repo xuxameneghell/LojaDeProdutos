@@ -63,5 +63,12 @@ public class Venda {
     public void setId(int id) {
         this.id = id;
     }
+
+    @Override
+    public String toString() {
+        return "Venda{" + "cliente=" + cliente + ", status=" + status + ", listProdutos=" + listProdutos + ", totalPagar=" + totalPagar + ", id=" + id + '}';
+    }
+    
+    
 }
     
